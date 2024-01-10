@@ -1,4 +1,5 @@
-#required modules
+#import and install all required modules
+#IMPORANT DISCLAIMER: EDIT LINE 110 & 201 TO YOUR OWN DEVICE-SPECIFIC IMAGE PATH IF DIFFERENT
 import pygame as pg
 import sys, random, math
 import pygame
@@ -107,7 +108,7 @@ class Archibald(pg.sprite.Sprite):
         self.game = game
         self.groups = game.all_sprites
         pg.sprite.Sprite.__init__(self, self.groups)
-        self.image = pg.image.load("C:/Users/Mhayat22/Desktop/archibald/archie_0.png") #loads image
+        self.image = pg.image.load("archie_0.png") #loads image
         self.rect = self.image.get_rect()
 
         self.rect.x, self.rect.y = x * TILE, y * TILE
@@ -197,7 +198,7 @@ class Obstacle0(pg.sprite.Sprite): #intilaizing class for the obstacle in-game
         self.game = game        
         self.groups = game.all_sprites, game.obstacle
         pg.sprite.Sprite.__init__(self, self.groups)
-        self.image = pg.image.load("C:/Users/Mhayat22/Desktop/archibald/obstacle0.png") #load image
+        self.image = pg.image.load("obstacle0.png") #load image
         self.rect = self.image.get_rect() #used to display image on screen 
         self.rect.x, self.rect.y = x * TILE + random.randint(0, 750), y * TILE #obstacle will spawn on these coordinates
         self.vx = MIN_OBSTACLE_SPEED #obstacle will spawn with the value of the most minimum speed intilaized 
@@ -211,8 +212,6 @@ class Obstacle0(pg.sprite.Sprite): #intilaizing class for the obstacle in-game
    
     def obstacle0Rotate():
        self.image = pg.transform.rotate(self.image,1)
-
-
 
 
 
