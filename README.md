@@ -6,7 +6,7 @@
 
 **1. Object-Oriented Programming (OOP) Concepts**
 
-   OOP princ  iples are heavily used in the design of this game. Here are the core OOP concepts illustrated:
+   OOP principles are heavily used in the design of this game. Here are the core OOP concepts illustrated:
  
 **Classes and Objects:**
 	The game relies on multiple classes, each encapsulating a distinct responsibility. For example, the Game class manages the game loop, the Archibald class manages the player’s movements and actions, and the Obstacle0 class represents the moving obstacles. Each class corresponds to a real-world object or entity within the game.
