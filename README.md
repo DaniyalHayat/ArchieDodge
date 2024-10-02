@@ -26,7 +26,7 @@ Setup Instructions
 Clone the repository: 
 
 		1. git clone https://github.com/yourusername/archiedodge.git
-	cd archiedodge
+		   cd archiedodge
 
 Install dependencies:
 Make sure you have Python and Pygame installed. If not, install Pygame with
